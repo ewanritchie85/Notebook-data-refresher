@@ -1,15 +1,12 @@
-
 # Projects Data Workspace
 
 This workspace contains Jupyter notebooks and CSV files for managing and analyzing customer, order, and product data. It is designed for data exploration, database interaction, and reporting.
 
-
 ## Highlights
 - Combined analysis notebook for cross-dataset insights
-- Multiple interactive visualizations using Plotly and Matplotlib
+- Multiple visualizations using Plotly, Seaborn and Matplotlib
 - Example analyses: sales by category, sales by region, monthly trends, top customers, order status breakdown, and more
-- Database interaction via local PostgreSQL (required for database notebooks)
-
+- Database interaction via local PostgreSQL and SQLAlchemy (required for database notebooks)
 
 ## Structure
 - `CSVs/customers.csv`: Raw customer data
@@ -23,15 +20,13 @@ This workspace contains Jupyter notebooks and CSV files for managing and analyzi
 - `notebooks/combined_notebook.ipynb`: Combined analysis across all datasets
 - `notebooks/database.ipynb`: Database setup and interaction (requires local PostgreSQL)
 
-
 ## Notebooks
 Each notebook starts by importing required packages and loading the relevant data. Analyses include:
-- Data visualization with Plotly and Matplotlib
+- Data visualization with Seaborn and Matplotlib
 - Summary statistics and charts for customers, products, and orders
 - Combined notebook: cross-dataset visualizations (e.g., sales by region, top customers, payment method analysis)
 - Grouped and comparative plots by region, age, loyalty tier, product category, and more
-- Database notebook: connects to local PostgreSQL, creates tables, loads CSV data, and runs SQL queries
-
+- Database notebook: connects to local PostgreSQL using SQLAlchemy, creates tables, loads CSV data, and runs SQL queries
 
 ## Requirements
 - Python (recommended: 3.8+)
@@ -54,18 +49,17 @@ Each notebook starts by importing required packages and loading the relevant dat
    - For combined analysis, open `notebooks/combined_notebook.ipynb`
    - For database setup and SQL queries, open `notebooks/database.ipynb`
 
-
 ## Usage
 - Explore customer, product, and order data
 - Visualize trends and distributions
-- Use `combined_notebook.ipynb` for multi-table insights and advanced visualizations
-- Use `database.ipynb` for database setup, table creation, and SQL queries (requires local PostgreSQL)
+- Use `combined_notebook.ipynb` for multi-table insights and advanced visualizations (now using Seaborn/Matplotlib)
+- Use `database.ipynb` for database setup, table creation, and SQL queries (requires local PostgreSQL and SQLAlchemy)
 - Modify notebooks to add new analyses
-
 
 ## Notes
 - Ensure CSV files are in the `CSVs` folder for correct loading
 - Notebooks use relative paths to access CSV files
+- Database interaction is handled with SQLAlchemy for improved reliability
 - Update connection settings in `database.ipynb` as needed for your local PostgreSQL setup
 
 ---
