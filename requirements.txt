@@ -1,6 +1,15 @@
+
+# Data manipulation libraries
 pandas
+
+# Graphing libraries
 matplotlib
 plotly
+seaborn
+
+# Database libraries
 psycopg2
-dotenv
 sqlalchemy
+
+# Environment variable management
+dotenv
